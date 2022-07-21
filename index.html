@@ -4,133 +4,265 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Landon Calton</title>
+    <title>Landon Calton | Portfolio</title>
+    <meta name="title" content="Landon Calton | Portfolio" />
     <meta
       name="description"
-      content="Simplified Bootstrap template with sticky menu"
+      content="Landon Calton - view my portfolio of work"
     />
-    <link rel="stylesheet" href="bootstrap-icons.css" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Landon Calton | Portfolio" />
+    <meta
+      property="og:description"
+      content="Landon Calton - view my portfolio of work"
+    />
+    <meta
+      property="og:site_name"
+      content="Landon Calton - view my portfolio of work"
+    />
+    <!-- Bootstrap CSS (v3) -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-        }
-        body, body * {
-            box-sizing: content-box;
-            overflow: auto;
-            font-family: Arial, Verdana, sans-serif;
-        }
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+      }
+      body,
+      body * {
+        box-sizing: content-box;
+        overflow: auto;
+        font-family: Arial, Verdana, sans-serif;
+      }
+      .welcome-section {
+        color: #ffffff;
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+        padding: 0%;
+        background-image: url(https://raw.githubusercontent.com/landoncalton/landoncalton.github.io/main/spacex--p-KCm6xB9I-unsplash.jpg);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .welcome-inner {
+        padding-left: 8vw;
+      }
+      .welcome-h1 {
+        font-size: 4rem;
+        font-weight: 100;
+        margin: 0%;
+      }
+      .welcome-h3 {
+        font-size: 1.5rem;
+        font-weight: 100;
+        margin: 5px 0 25px 0;
+      }
+      .cta-row__button {
+        display: inline-block;
+        background-color: transparent;
+        border: solid 2px #ffffff;
+        color: #ffffff;
+        padding: 15px 12px;
+        width: 210px;
+        max-width: 100%;
+        text-align: center;
+        text-decoration: none;
+        font-size: 12px;
+        vertical-align: middle;
+        -webkit-transition: all 0.3s linear;
+        -moz-transition: all 0.3s linear;
+        -o-transition: all 0.3s linear;
+        transition: all 0.3s linear;
+      }
+      .cta-row__button:hover {
+        background-color: #ffffff;
+        color: #0b415a;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      .cta-row__button--active {
+        background-color: #ffffff;
+        color: #0b415a;
+      }
+      @media (max-width: 560px) {
         .welcome-section {
-            color: #ffffff;
-            width: 100vw;
-            height: 100vh;
-            margin: 0%;
-            padding: 0%;
-            background-image: url(https://raw.githubusercontent.com/landoncalton/landoncalton.github.io/main/spacex--p-KCm6xB9I-unsplash.jpg);
-            background-size: cover;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+          background-position: -94% 20%;
         }
         .welcome-inner {
-            padding-left: 8vw;
+          padding-left: 15px;
+          padding-right: 15px;
         }
-        .welcome-h1 {
-            font-size: 4rem;
-            font-weight: 100;
-            margin: 0%;
+      }
+      @media (min-width: 511px) {
+        .show-mobile {
+          display: none;
         }
-        .welcome-h3 {
-            font-size: 1.5rem;
-            font-weight: 100;
-            margin: 5px 0 25px 0;
+      }
+      @media (max-width: 510px) {
+        .hide-mobile {
+          display: none;
         }
         .cta-row__button {
-            display: inline-block;
-            background-color: transparent;
-            border: solid 2px #ffffff;
-            color: #ffffff;
-            padding: 15px 12px;
-            width: 210px;
-            max-width: 100%;
-            text-align: center;
-            text-decoration: none;
-            font-size: 1rem;
-            -webkit-transition: all 0.3s linear;
-            -moz-transition: all 0.3s linear;
-            -o-transition: all 0.3s linear;
-            transition: all 0.3s linear;
+          width: calc(100% - 30px);
         }
-        .cta-row__button:hover {
-            background-color: #ffffff;
-            color: #0b415a;
-            cursor: pointer;
+        .welcome-h3--line1 {
+          margin-bottom: 5px;
         }
-        .cta-row__button--active {
-            background-color: #ffffff;
-            color: #0b415a;
+        .welcome-h3--line2 {
+          margin-top: 0;
         }
-        @media (max-width: 560px) {
-            .welcome-section {
-                background-position: -94% 20%;
-            }
-            .welcome-inner {
-                padding-left: 15px;
-                padding-right: 15px;
-            }
-        }
-        @media (min-width: 511px) {
-            .show-mobile {
-                display: none;
-            }
-        }
-        @media (max-width: 510px) {
-            .hide-mobile {
-                display: none;
-            }
-            .cta-row__button {
-                width: calc(100% - 30px);
-            }
-            .welcome-h3--line1 {
-                margin-bottom: 5px;
-            }
-            .welcome-h3--line2 {
-                margin-top: 0;
-            }
-        }
+      }
+      /* Utility Classes */
+      .transition-ease {
+        transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+      }
+      .postion-relative {
+        position: relative;
+      }
+      .position-absolute {
+        position: absolute;
+      }
+      .flex-column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .w100 {
+        width: 100%;
+      }
+      .h100 {
+        height: 100%;
+      }
+      .dynamic-content-card {
+        position: absolute;
+        top: 100vh;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 95%;
+        height: 97%;
+        background-color: #000000;
+        border-radius: 10px 10px 0px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .dynamic-content-card.card-is-open {
+        top: 3%;
+      }
+      .close-button {
+        top: 20px;
+        right: 20px;
+        background-color: #ffffff;
+        border: solid 2px #ffffff;
+        border-radius: 50px;
+        padding: 5px 12px;
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .close-button:hover, 
+      .close-button:active, 
+      .close-button:focus {
+        background-color: transparent;
+        color: #ffffff;
+      }
     </style>
     <section id="welcome" class="welcome-section">
-        <div class="welcome-inner">
-            <h1 class="welcome-h1">Landon J. Calton</h1>
-            <h3 class="welcome-h3 hide-mobile">North Carolina State University | Raleigh, NC</h3>
-            <h3 class="welcome-h3 welcome-h3--line1 show-mobile">North Carolina State University</h3>
-            <h3 class="welcome-h3 welcome-h3--line2 show-mobile">Raleigh, NC</h3>
-            <div class="cta-row">
-                <a class="cta-row__button cta-row__button--active" href="https://linkedin.com/in/ljcengineer" target="_blank" >LinkedIn</a>
-                <a class="cta-row__button" href="https://www.mdpi.com/2076-3417/12/3/1466" target="_blank" >AI Research</a>
-                <a class="cta-row__button" href="https://github.com/landoncalton/portfolio/blob/main/LCalton_portfolio.zip?raw=true" download="My portfolio">Download Portfolio</a>
-            </div>
+      <div class="welcome-inner">
+        <h1 class="welcome-h1">Landon J. Calton</h1>
+        <h3 class="welcome-h3 hide-mobile">
+          North Carolina State University | Raleigh, NC
+        </h3>
+        <h3 class="welcome-h3 welcome-h3--line1 show-mobile">
+          North Carolina State University
+        </h3>
+        <h3 class="welcome-h3 welcome-h3--line2 show-mobile">Raleigh, NC</h3>
+        <div class="cta-row">
+          <a
+            class="cta-row__button cta-row__button--active"
+            href="https://linkedin.com/in/ljcengineer"
+            target="_blank"
+            >LinkedIn</a
+          >
+          <a
+            class="cta-row__button"
+            href="https://www.mdpi.com/2076-3417/12/3/1466"
+            target="_blank"
+            >AI Research</a
+          >
+          <a
+            class="cta-row__button"
+            href="https://github.com/landoncalton/portfolio/blob/main/LCalton_portfolio.zip?raw=true"
+            download="My portfolio"
+            >Download Portfolio</a
+          >
+          <button type="button" class="cta-row__button trigger-dynamic-content">Car Project</button>
         </div>
-        <div style="position: fixed; z-index: -99; width: 100%; height: 100%">
-            <iframe
-            frameborder="0"
-            height="100%"
-            width="100%"
-            src="https://youtu.be/5_rM6jf7Fog"
-            >
-            </iframe>
-        </div>
+      </div>
     </section>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <div class="transition-ease dynamic-content-card card-is-open">
+      <div class="postion-relative flex-column w100 h100">
+        <button class="position-absolute transition-ease close-button" data-close-element=".dynamic-content-card">x</button>
+        <div class="container">
+            <div class="row">
+              <div class="col-xs-12 col-md-8 col-md-offset-2">
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe
+                    width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/5_rM6jf7Fog"
+                    title="Landon Calton | Remote controlled car project"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <!-- jQuery (v2) -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- Bootstrap JS (v3) -->
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Scripts -->
     <script>
-        $(function(){
-            $('.cta-row__button').hover(function(){
-                $('.cta-row__button--active').removeClass('cta-row__button--active');
-                $(this).addClass('cta-row__button--active');
-            });
-        })
+      $(function () {
+
+        $(".cta-row__button").hover(function () {
+          $(".cta-row__button--active").removeClass("cta-row__button--active");
+          $(this).addClass("cta-row__button--active");
+        });
+
+        $('.trigger-dynamic-content').click(function(){
+            $('.dynamic-content-card').toggleClass('card-is-open');
+        });
+
+        $('[data-close-element]').click(function(){
+            let element = $(this).attr('data-close-element');
+            $(element).toggleClass('card-is-open');
+        });
+
+      });
     </script>
   </body>
 </html>
