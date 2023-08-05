@@ -210,8 +210,8 @@
             target="_blank"
             >AI Research</a
           >
-          <button type="button" class="cta-row__button trigger-dynamic-content">Car Project</button>
-          <button type="button" class="cta-row__button trigger-dynamic-content">Tesla Coil</button>
+          <button type="button" class="cta-row__button trigger-dynamic-content button1">Car Project</button>
+          <button type="button" class="cta-row__button trigger-dynamic-content button2">Tesla Coil</button>
         </div>
         <div class="cta-row">
           <a
@@ -223,9 +223,9 @@
         </div>
       </div>
     </section>
-    <div class="transition-ease dynamic-content-card">
+    <div class="transition-ease dynamic-content-card card1">
       <div class="postion-relative flex-column w100 h100">
-        <button class="position-absolute transition-ease close-button" data-close-element=".dynamic-content-card">x</button>
+        <button class="position-absolute transition-ease close-button" data-close-element=".dynamic-content-card.card1">x</button>
         <div class="w100 video-embed-container">
             <div class="container-fluid">
                 <div class="row">
@@ -247,9 +247,9 @@
         </div>
       </div>
     </div>
-    <div class="transition-ease dynamic-content-card">
+    <div class="transition-ease dynamic-content-card card2">
       <div class="postion-relative flex-column w100 h100">
-        <button class="position-absolute transition-ease close-button" data-close-element=".dynamic-content-card">x</button>
+        <button class="position-absolute transition-ease close-button" data-close-element=".dynamic-content-card.card2">x</button>
         <div class="w100 video-embed-container">
             <div class="container-fluid">
                 <div class="row">
@@ -288,13 +288,16 @@
           $(this).addClass("cta-row__button--active");
         });
 
-        $('.trigger-dynamic-content').click(function(){
-            $('.dynamic-content-card').toggleClass('card-is-open');
+        $('.trigger-dynamic-content.button1').click(function(){
+            $('.dynamic-content-card.card1').toggleClass('card-is-open');
         });
 
         $('[data-close-element]').click(function(){
             let element = $(this).attr('data-close-element');
             $(element).toggleClass('card-is-open');
+        });
+        $('.trigger-dynamic-content.button2').click(function(){
+            $('.dynamic-content-card.card2').toggleClass('card-is-open');
         });
 
       });
