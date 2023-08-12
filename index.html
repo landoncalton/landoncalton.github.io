@@ -212,6 +212,7 @@
           >
           <button type="button" class="cta-row__button trigger-dynamic-content button1">Car Project</button>
           <button type="button" class="cta-row__button trigger-dynamic-content button2">Tesla Coil</button>
+          <button type="button" class="cta-row__button trigger-dynamic-content button2">Wheelchair Project</button>
         </div>
         <div class="cta-row">
           <a
@@ -271,6 +272,30 @@
         </div>
       </div>
     </div>
+    <div class="transition-ease dynamic-content-card card3">
+      <div class="postion-relative flex-column w100 h100">
+        <button class="position-absolute transition-ease close-button" data-close-element=".dynamic-content-card.card3">x</button>
+        <div class="w100 video-embed-container">
+            <div class="container-fluid">
+                <div class="row">
+                  <div class="col-xs-12 col-md-8 col-md-offset-2">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe
+                        width="100%"
+                        height="100%"
+                        src="https://github.com/landoncalton/landoncalton.github.io/blob/260189b7f4b3d39d33f0f5d9b467d9d5f6e0b791/Wheelchair_Electric_Assist.gif"
+                        title="Landon Calton | Wheelchair Electric Assist project"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
     <!-- jQuery (v2) -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <!-- Bootstrap JS (v3) -->
@@ -298,6 +323,9 @@
         });
         $('.trigger-dynamic-content.button2').click(function(){
             $('.dynamic-content-card.card2').toggleClass('card-is-open');
+        });
+        $('.trigger-dynamic-content.button3').click(function(){
+            $('.dynamic-content-card.card3').toggleClass('card-is-open');
         });
 
       });
