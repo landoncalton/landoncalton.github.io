@@ -2,305 +2,414 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Landon Calton | Portfolio</title>
-    <meta name="title" content="Landon Calton | Portfolio" />
+    <meta name="theme-color" content="#070a0d" />
+    <title>Landon J. Calton | Electromechanical Systems Engineer</title>
     <meta
       name="description"
-      content="Landon Calton - view my portfolio of work"
+      content="Landon J. Calton is an electromechanical systems engineer working across intelligent machines, embedded control, power electronics, and applied AI."
     />
+    <link rel="canonical" href="https://landoncalton.github.io/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Landon Calton | Portfolio" />
+    <meta property="og:title" content="Landon J. Calton | Engineering Portfolio" />
     <meta
       property="og:description"
-      content="Landon Calton - view my portfolio of work"
+      content="Engineering work spanning intelligent machines, embedded control, power electronics, and applied AI."
     />
-    <meta
-      property="og:site_name"
-      content="Landon Calton - view my portfolio of work"
-    />
-    <!-- Bootstrap CSS (v3) -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
-      crossorigin="anonymous"
-    />
+    <meta property="og:url" content="https://landoncalton.github.io/" />
+    <meta property="og:site_name" content="Landon J. Calton" />
+    <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Landon J. Calton",
+        "jobTitle": "Electromechanical Systems Engineer",
+        "email": "mailto:caltonlandon@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Raleigh",
+          "addressRegion": "NC",
+          "addressCountry": "US"
+        },
+        "sameAs": ["https://linkedin.com/in/ljcengineer"]
+      }
+    </script>
+    <script src="js/main.js" defer></script>
   </head>
   <body>
-    <style>
-      body,
-      body * {
-        font-family: Arial, Verdana, sans-serif;
-      }
-      body {
-        margin: 0;
-        padding: 0;
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-      }
-      .welcome-section {
-        color: #ffffff;
-        width: 100%;
-        height: 100%;
-        margin: 0%;
-        padding: 0%;
-        background-image: url(https://raw.githubusercontent.com/landoncalton/landoncalton.github.io/main/spacex--p-KCm6xB9I-unsplash.jpg);
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-      .welcome-inner {
-        padding-left: 8vw;
-      }
-      .welcome-h1 {
-        font-size: 5rem;
-        font-weight: 100;
-        margin: 0%;
-      }
-      .welcome-h3 {
-        font-size: 2rem;
-        font-weight: 100;
-        margin: 5px 0 25px 0;
-      }
-      .cta-row__button {
-        display: inline-block;
-        background-color: transparent;
-        border: solid 2px #ffffff;
-        color: #ffffff;
-        padding: 15px 12px;
-        width: 210px;
-        max-width: 100%;
-        text-align: center;
-        text-decoration: none;
-        font-size: 1.3rem;
-        letter-spacing: 0.5px;
-        vertical-align: middle;
-        margin: 0px 5px 10px 0px;
-        text-transform: uppercase;
-        -webkit-transition: all 0.3s ease;
-        -moz-transition: all 0.3s ease;
-        -o-transition: all 0.3s ease;
-        transition: all 0.3s ease;
-      }
-      .cta-row__button:hover, 
-      .cta-row__button:active, 
-      .cta-row__button:focus {
-        background-color: #ffffff;
-        color: #0b415a;
-        cursor: pointer;
-        text-decoration: none;
-      }
-      .cta-row__button--active {
-        background-color: #ffffff;
-        color: #0b415a;
-      }
-      .video-embed-container {
-        overflow-y: scroll;
-      }
-      @media (max-width: 560px) {
-        .welcome-section {
-          background-position: -94% 20%;
-        }
-        .welcome-inner {
-          padding-left: 15px;
-          padding-right: 15px;
-        }
-      }
-      @media (min-width: 511px) {
-        .show-mobile {
-          display: none;
-        }
-      }
-      @media (max-width: 510px) {
-        .hide-mobile {
-          display: none;
-        }
-        .cta-row__button {
-          width: calc(100% - 30px);
-        }
-        .welcome-h3--line1 {
-          margin-bottom: 5px;
-        }
-        .welcome-h3--line2 {
-          margin-top: 0;
-        }
-      }
-      /* Utility Classes */
-      .transition-ease {
-        transition: all 0.3s ease;
-        -webkit-transition: all 0.3s ease;
-        -moz-transition: all 0.3s ease;
-        -o-transition: all 0.3s ease;
-      }
-      .postion-relative {
-        position: relative;
-      }
-      .position-absolute {
-        position: absolute;
-      }
-      .flex-column {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-      .w100 {
-        width: 100%;
-      }
-      .h100 {
-        height: 100%;
-      }
-      .dynamic-content-card {
-        position: absolute;
-        top: 100vh;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 95%;
-        height: 97%;
-        background-color: #000000;
-        border-radius: 10px 10px 0px 0px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      .dynamic-content-card.card-is-open {
-        top: 3%;
-      }
-      .close-button {
-        top: 20px;
-        right: 20px;
-        background-color: #ffffff;
-        border: solid 2px #ffffff;
-        border-radius: 50px;
-        padding: 5px 12px;
-        font-size: 15px;
-        font-weight: bold;
-      }
-      .close-button:hover, 
-      .close-button:active, 
-      .close-button:focus {
-        background-color: transparent;
-        color: #ffffff;
-      }
-    </style>
-    <section id="welcome" class="welcome-section">
-      <div class="welcome-inner">
-        <h1 class="welcome-h1">Landon J. Calton</h1>
-        <h3 class="welcome-h3 hide-mobile">
-          North Carolina State University | Raleigh, NC
-        </h3>
-        <h3 class="welcome-h3 welcome-h3--line1 show-mobile">
-          North Carolina State University
-        </h3>
-        <h3 class="welcome-h3 welcome-h3--line2 show-mobile">Raleigh, NC</h3>
-        <div class="cta-row">
-          <a
-            class="cta-row__button cta-row__button--active"
-            href="https://linkedin.com/in/ljcengineer"
-            target="_blank"
-            >LinkedIn</a
-          >
-          <a
-            class="cta-row__button"
-            href="https://www.mdpi.com/2076-3417/12/3/1466"
-            target="_blank"
-            >AI Research</a
-          >
-          <button type="button" class="cta-row__button trigger-dynamic-content button1">Car Project</button>
-          <button type="button" class="cta-row__button trigger-dynamic-content button2">Tesla Coil</button>
-        </div>
-        <div class="cta-row">
-          <a
-            class="cta-row__button"
-            href="https://github.com/landoncalton/portfolio/releases/download/v1.2/LCalton_portfolio.zip?raw=true"
-            download="My portfolio"
-            >Download Portfolio</a
-          >
-        </div>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#top" aria-label="Landon J. Calton — return to top">
+          <span class="brand-mark" aria-hidden="true">LC</span>
+          <span>Landon J. Calton</span>
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="site-navigation"
+        >
+          <span class="menu-toggle-lines" aria-hidden="true"></span>
+        </button>
+        <nav id="site-navigation" class="site-nav" aria-label="Primary navigation">
+          <a href="#work">Work</a>
+          <a href="#research">Research</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </div>
-    </section>
-    <div class="transition-ease dynamic-content-card card1">
-      <div class="postion-relative flex-column w100 h100">
-        <button class="position-absolute transition-ease close-button" data-close-element=".dynamic-content-card.card1">x</button>
-        <div class="w100 video-embed-container">
-            <div class="container-fluid">
-                <div class="row">
-                  <div class="col-xs-12 col-md-8 col-md-offset-2">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe
-                        width="100%"
-                        height="100%"
-                        src="https://www.youtube.com/embed/5_rM6jf7Fog"
-                        title="Landon Calton | Remote controlled car project"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
-                      ></iframe>
-                    </div>
-                  </div>
-                </div>
+    </header>
+
+    <main id="main-content">
+      <section id="top" class="hero" aria-labelledby="hero-title">
+        <div class="hero-inner">
+          <div class="hero-content">
+            <p class="eyebrow">Landon J. Calton / Engineering Portfolio</p>
+            <h1 id="hero-title">Engineer intelligent <em>electromechanical</em> systems.</h1>
+            <p class="hero-summary">
+              Design, prototype, and research work spanning intelligent machines,
+              embedded control, power electronics, and applied AI.
+            </p>
+            <div class="hero-actions">
+              <a class="button button--primary" href="#work">View selected work</a>
+              <a class="button button--ghost" href="#contact">Start a conversation</a>
+            </div>
+          </div>
+          <div class="hero-meta" aria-label="Professional summary">
+            <div class="hero-meta-item">
+              <span class="meta-label">Focus</span>
+              <span class="meta-value">Intelligent physical systems</span>
+            </div>
+            <div class="hero-meta-item">
+              <span class="meta-label">Based in</span>
+              <span class="meta-value">Raleigh, North Carolina</span>
+            </div>
+            <div class="hero-meta-item">
+              <span class="meta-label">Background</span>
+              <span class="meta-value">M.S. Electrical Engineering</span>
+            </div>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#work">Scroll to explore</a>
+      </section>
+
+      <section id="work" class="section section--work" aria-labelledby="work-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Selected Work</p>
+            <h2 id="work-title">Systems built to move ideas into reality.</h2>
+            <p>
+              A focused collection of electromechanical, power-electronics, and
+              mobility projects. Open a project to view its current media and
+              portfolio record.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card project-card--car">
+              <img
+                class="project-media"
+                src="assets/images/car_project.mp4.png"
+                alt="Remote-controlled car project preview"
+                loading="lazy"
+                width="1600"
+                height="900"
+              />
+              <div class="project-top">
+                <span class="project-number">01 / Project</span>
+                <span class="project-status">Media available</span>
               </div>
-        </div>
-      </div>
-    </div>
-    <div class="transition-ease dynamic-content-card card2">
-      <div class="postion-relative flex-column w100 h100">
-        <button class="position-absolute transition-ease close-button" data-close-element=".dynamic-content-card.card2">x</button>
-        <div class="w100 video-embed-container">
-            <div class="container-fluid">
-                <div class="row">
-                  <div class="col-xs-12 col-md-8 col-md-offset-2">
-                    <div class="embed-responsive embed-responsive-16by9">
-                      <iframe
-                        width="100%"
-                        height="100%"
-                        src="https://www.youtube.com/embed/kjo4GLmuMJI"
-                        title="Landon Calton | Solid State Tesla coil project"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen
-                      ></iframe>
-                    </div>
-                  </div>
+              <div class="project-bottom">
+                <div>
+                  <h3 class="project-title">Remote-Controlled Car</h3>
+                  <p class="project-summary">
+                    An electromechanical vehicle project documented through working
+                    project media.
+                  </p>
+                  <p class="project-meta"><span>Electromechanical</span><span>Vehicle systems</span></p>
                 </div>
+                <button class="project-open" type="button" data-dialog-target="#car-dialog" aria-haspopup="dialog">
+                  Open project ↗
+                </button>
               </div>
+            </article>
+
+            <article class="project-card project-card--coil">
+              <img
+                class="project-media"
+                src="assets/images/tesla-coil-preview.jpg"
+                alt="Solid-state Tesla coil project preview"
+                loading="lazy"
+                width="1600"
+                height="900"
+              />
+              <div class="project-top">
+                <span class="project-number">02 / Project</span>
+                <span class="project-status">Media available</span>
+              </div>
+              <div class="project-bottom">
+                <div>
+                  <h3 class="project-title">Solid-State Tesla Coil</h3>
+                  <p class="project-summary">
+                    A high-voltage power-electronics project explored through design
+                    and experimental work.
+                  </p>
+                  <p class="project-meta"><span>Power electronics</span><span>Experimental systems</span></p>
+                </div>
+                <button class="project-open" type="button" data-dialog-target="#coil-dialog" aria-haspopup="dialog">
+                  Open project ↗
+                </button>
+              </div>
+            </article>
+
+            <article class="project-card project-card--wheelchair">
+              <img
+                class="project-media"
+                src="Wheelchair_Electric_Assist.gif"
+                alt="Animated demonstration of the wheelchair electric-assist project"
+                loading="lazy"
+                width="1200"
+                height="338"
+              />
+              <div class="project-top">
+                <span class="project-number">03 / Project</span>
+                <span class="project-status">Concept demonstration</span>
+              </div>
+              <div class="project-bottom">
+                <div>
+                  <h3 class="project-title">Wheelchair Electric Assist</h3>
+                  <p class="project-summary">
+                    A mobility-assist project centered on accessible electric support.
+                  </p>
+                  <p class="project-meta"><span>Mobility</span><span>Assistive technology</span></p>
+                </div>
+                <button class="project-open" type="button" data-dialog-target="#wheelchair-dialog" aria-haspopup="dialog">
+                  Open project ↗
+                </button>
+              </div>
+            </article>
+
+            <article id="research" class="project-card project-card--research" aria-labelledby="research-title">
+              <div class="project-top">
+                <span class="project-number">04 / Research</span>
+                <span class="project-status">Peer reviewed</span>
+              </div>
+              <div class="project-bottom">
+                <div>
+                  <h3 id="research-title" class="project-title">AI for hurricane damage assessment.</h3>
+                  <p class="project-summary">
+                    <cite>Using Artificial Neural Network Models to Assess Hurricane
+                    Damage through Transfer Learning</cite>, published in Applied
+                    Sciences in 2022 with Zhangping Wei.
+                  </p>
+                  <p class="project-meta"><span>Applied AI</span><span>Transfer learning</span></p>
+                </div>
+                <button class="project-open" type="button" data-dialog-target="#research-dialog" aria-haspopup="dialog">
+                  Read research ↗
+                </button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--credentials" aria-labelledby="credentials-title">
+        <div class="section-inner">
+          <div class="section-heading">
+            <p class="eyebrow">Foundation</p>
+            <h2 id="credentials-title">Technical thinking grounded in physics and electrical engineering.</h2>
+          </div>
+
+          <div class="credential-grid">
+            <article class="credential-panel">
+              <p class="eyebrow">Education</p>
+              <h3>Systems-focused engineering from first principles.</h3>
+              <dl class="credential-list">
+                <div>
+                  <dt>2023</dt>
+                  <dd>M.S. Electrical Engineering<br />North Carolina State University</dd>
+                </div>
+                <div>
+                  <dt>2021</dt>
+                  <dd>B.S. Physics<br />University of North Carolina Wilmington</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article class="credential-panel">
+              <p class="eyebrow">Disciplines</p>
+              <h3>Where hardware, computation, and experimentation meet.</h3>
+              <ul class="capability-list">
+                <li>Intelligent systems</li>
+                <li>Embedded control</li>
+                <li>Power &amp; hardware systems</li>
+                <li>Electromechanical prototyping</li>
+                <li>Applied AI research</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-panel" aria-labelledby="contact-title">
+        <div class="section-inner">
+          <div class="contact-content">
+            <p class="eyebrow">Contact</p>
+            <h2 id="contact-title">Let’s build what’s next.</h2>
+            <p>
+              For engineering opportunities, technical collaborations, or research
+              conversations, get in touch directly or connect on LinkedIn.
+            </p>
+            <div class="contact-actions">
+              <a class="button button--primary" href="mailto:caltonlandon@gmail.com">Email Landon</a>
+              <a
+                class="button button--ghost"
+                href="https://linkedin.com/in/ljcengineer"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Connect on LinkedIn
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <dialog id="car-dialog" class="project-dialog" aria-labelledby="car-dialog-title">
+      <div class="project-dialog__shell">
+        <header class="project-dialog__header">
+          <p class="project-number">01 / Project</p>
+          <button class="dialog-close" type="button" data-dialog-close aria-label="Close remote-controlled car project">
+            <span aria-hidden="true">×</span>
+            Close
+          </button>
+        </header>
+        <div class="project-dialog__body">
+          <figure class="project-dialog__media">
+            <video controls preload="metadata" playsinline poster="assets/images/car_project.mp4.png" aria-describedby="car-dialog-caption">
+              <source src="assets/video/car-project-web.mp4" type="video/mp4" />
+              Your browser does not support HTML video. Download the project video to view it.
+            </video>
+            <figcaption id="car-dialog-caption">Remote-Controlled Car project video.</figcaption>
+          </figure>
+          <div class="project-dialog__content">
+            <p class="eyebrow">Project Record</p>
+            <h2 id="car-dialog-title">Remote-Controlled Car</h2>
+            <p>An electromechanical vehicle project documented through working project media.</p>
+            <dl class="project-facts">
+              <div><dt>Focus</dt><dd>Vehicle systems</dd></div>
+              <div><dt>Discipline</dt><dd>Electromechanical</dd></div>
+              <div><dt>Evidence</dt><dd>Project video</dd></div>
+            </dl>
+          </div>
         </div>
       </div>
-    </div>
-    <!-- jQuery (v2) -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <!-- Bootstrap JS (v3) -->
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Scripts -->
-    <script>
-      $(function () {
+    </dialog>
 
-        $(".cta-row__button").hover(function () {
-          $(".cta-row__button--active").removeClass("cta-row__button--active");
-          $(this).addClass("cta-row__button--active");
-        });
+    <dialog id="coil-dialog" class="project-dialog" aria-labelledby="coil-dialog-title">
+      <div class="project-dialog__shell">
+        <header class="project-dialog__header">
+          <p class="project-number">02 / Project</p>
+          <button class="dialog-close" type="button" data-dialog-close aria-label="Close solid-state Tesla coil project">
+            <span aria-hidden="true">×</span>
+            Close
+          </button>
+        </header>
+        <div class="project-dialog__body">
+          <figure class="project-dialog__media">
+            <video controls preload="metadata" playsinline poster="assets/images/tesla-coil-preview.jpg" aria-describedby="coil-dialog-caption">
+              <source src="assets/video/tesla-coil-web.mp4" type="video/mp4" />
+              Your browser does not support HTML video. Download the project video to view it.
+            </video>
+            <figcaption id="coil-dialog-caption">Solid-State Tesla Coil project video.</figcaption>
+          </figure>
+          <div class="project-dialog__content">
+            <p class="eyebrow">Project Record</p>
+            <h2 id="coil-dialog-title">Solid-State Tesla Coil</h2>
+            <p>A high-voltage power-electronics project explored through design and experimental work.</p>
+            <dl class="project-facts">
+              <div><dt>Focus</dt><dd>Power electronics</dd></div>
+              <div><dt>Discipline</dt><dd>Experimental systems</dd></div>
+              <div><dt>Evidence</dt><dd>Project video</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </dialog>
 
-        $('.trigger-dynamic-content.button1').click(function(){
-            $('.dynamic-content-card.card1').toggleClass('card-is-open');
-        });
+    <dialog id="wheelchair-dialog" class="project-dialog" aria-labelledby="wheelchair-dialog-title">
+      <div class="project-dialog__shell">
+        <header class="project-dialog__header">
+          <p class="project-number">03 / Project</p>
+          <button class="dialog-close" type="button" data-dialog-close aria-label="Close wheelchair electric assist project">
+            <span aria-hidden="true">×</span>
+            Close
+          </button>
+        </header>
+        <div class="project-dialog__body">
+          <figure class="project-dialog__media project-dialog__media--contain">
+            <img src="Wheelchair_Electric_Assist.gif" alt="Animated demonstration of the wheelchair electric-assist project" width="1200" height="338" />
+            <figcaption>Wheelchair Electric Assist project demonstration.</figcaption>
+          </figure>
+          <div class="project-dialog__content">
+            <p class="eyebrow">Project Record</p>
+            <h2 id="wheelchair-dialog-title">Wheelchair Electric Assist</h2>
+            <p>A mobility-assist project centered on accessible electric support, shown here through an animated demonstration.</p>
+            <dl class="project-facts">
+              <div><dt>Focus</dt><dd>Mobility assist</dd></div>
+              <div><dt>Discipline</dt><dd>Assistive technology</dd></div>
+              <div><dt>Evidence</dt><dd>Animated demonstration</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </dialog>
 
-        $('[data-close-element]').click(function(){
-            let element = $(this).attr('data-close-element');
-            $(element).toggleClass('card-is-open');
-        });
-        $('.trigger-dynamic-content.button2').click(function(){
-            $('.dynamic-content-card.card2').toggleClass('card-is-open');
-        });
+    <dialog id="research-dialog" class="project-dialog" aria-labelledby="research-dialog-title">
+      <div class="project-dialog__shell">
+        <header class="project-dialog__header">
+          <p class="project-number">04 / Research</p>
+          <button class="dialog-close" type="button" data-dialog-close aria-label="Close AI research publication">
+            <span aria-hidden="true">×</span>
+            Close
+          </button>
+        </header>
+        <div class="project-dialog__body project-dialog__body--research">
+          <div class="research-detail-mark" aria-hidden="true">AI</div>
+          <div class="project-dialog__content">
+            <p class="eyebrow">Peer-Reviewed Research</p>
+            <h2 id="research-dialog-title">AI for hurricane damage assessment.</h2>
+            <p>
+              <cite>Using Artificial Neural Network Models to Assess Hurricane Damage through Transfer Learning</cite>
+              was published in <cite>Applied Sciences</cite> in 2022 by Landon Calton and Zhangping Wei.
+            </p>
+            <dl class="project-facts">
+              <div><dt>Domain</dt><dd>Applied AI</dd></div>
+              <div><dt>Method</dt><dd>Transfer learning</dd></div>
+              <div><dt>Publication</dt><dd>Applied Sciences, 2022</dd></div>
+            </dl>
+            <a class="button button--primary project-dialog__link" href="https://www.mdpi.com/2076-3417/12/3/1466" target="_blank" rel="noreferrer">
+              Read publication ↗
+            </a>
+          </div>
+        </div>
+      </div>
+    </dialog>
 
-      });
-    </script>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p class="footer-label">© <span data-current-year>2026</span> Landon J. Calton</p>
+        <div class="footer-links">
+          <a href="#top">Back to top</a>
+          <a href="mailto:caltonlandon@gmail.com">Email</a>
+          <a href="https://linkedin.com/in/ljcengineer" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
